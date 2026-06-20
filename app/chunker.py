@@ -1,6 +1,3 @@
-
-
-
 def chunk_text(text:str, chunk_size=1000, overlap=200) -> list[str]:
     start = 0
     chunks=[]
