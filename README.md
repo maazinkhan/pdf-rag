@@ -1,5 +1,8 @@
 # pdf-rag
-My first project to build a rag app without using any frameworks
+
+My first project to build a RAG application from scratch without using any RAG frameworks.
+
+⚠️ This project uses a simple JSON file as the vector store and is intended for learning purposes.
 
 ## 1. Project Overview
 
@@ -8,13 +11,13 @@ My first project to build a rag app without using any frameworks
 A simple Retrieval-Augmented Generation (RAG) application built from scratch.
 
 Features:
-- Load a PDF
-- Chunk text
-- Generate Gemini embeddings
-- Store embeddings as JSON
-- Retrieve relevant chunks using cosine similarity
-- Generate answers using Gemini
 
+* Load a PDF
+* Chunk text
+* Generate Gemini embeddings
+* Store embeddings as JSON
+* Retrieve relevant chunks using cosine similarity
+* Generate answers using Gemini
 
 ## 2. Installation
 
@@ -23,17 +26,17 @@ Create a virtual environment:
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
+```
 
 Install dependencies:
+
+```bash
 pip install -r requirements.txt
 ```
 
 ## 3. API Key Setup
 
-```markdown
-## Gemini API Key
-
-Create a .env file:
+Create a `.env` file:
 
 ```env
 GOOGLE_API_KEY=your_api_key_here
@@ -41,49 +44,43 @@ GOOGLE_API_KEY=your_api_key_here
 
 ## 4. Index the PDF
 
-```markdown
-## Build the Index
-
 Place your PDF inside:
 
+```text
 data/docs/
+```
 
 Run:
 
 ```bash
 python3 index.py
 ```
+
 This will:
 
 1. Load the PDF
 2. Create chunks
 3. Generate embeddings
-4. Save records to data/embeddings.json
+4. Save records to `data/embeddings.json`
 
 ## 5. Chat with the PDF
-
-```markdown
-## Ask Questions
 
 Run:
 
 ```bash
 python3 chat.py
+```
 
 Example:
 
+```text
 Ask a question:
 What are queries, keys and values?
 ```
 
-
----
-
 ## 6. How It Works
 
-```markdown
-## Architecture
-
+```text
 PDF
 ↓
 Text Extraction
