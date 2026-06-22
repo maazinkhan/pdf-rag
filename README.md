@@ -49,6 +49,7 @@ Place your PDF inside:
 ```text
 data/docs/
 ```
+**Note:** A sample PDF (`attention_is_all_you_need.pdf`) is included in the project. Feel free to replace it with your own document and update the filename in `index.py`.
 
 Run:
 
